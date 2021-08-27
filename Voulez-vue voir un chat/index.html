@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="cato.jpg"/>
+        <title>Voulez-Vue voir un chat?</title>
+    </head>
+    
+    <body>
+        <div id="app">
+            <h1>Wanna see some cats?</h1>
+            <img :src="picture" alt="cato" :style="visible"/>
+            <button v-on:click="getCat()">Gimme a cat!</button>
+        </div>
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="cats.js"></script>
+    </body>
+</html>
