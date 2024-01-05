@@ -1,15 +1,12 @@
 const app = {
-    data(){
+    data() {
         return {
-            firstName: 'Lucy',
-            lastName: 'uwu',
-            picture: "cato.jpg",
-            gender: 'female',
+            picture: "cato.jpeg",
             visible: 'display:none'
         }
     },
     methods: {
-        async getCat(){
+        async getCat() {
             const response = await fetch("https://api.thecatapi.com/v1/images/search")
             const json = await response.json()
             this.picture = json[0].url
